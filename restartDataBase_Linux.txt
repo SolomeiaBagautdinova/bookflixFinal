@@ -1,0 +1,8 @@
+poner en linea de comandos:
+ find . -path "*/migrations/*.py" -not -name "__init__.py" -delete
+ find . -path "*/migrations/*.pyc"  -delete
+
+
+borrar el archivo db.sqlite3
+crear un archivo y llamarlo db.sqlite3
+se va a tener que crear un superusuario nuevamente

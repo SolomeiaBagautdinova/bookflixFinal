@@ -1,0 +1,10 @@
+Account:
+    email -> char(mail)
+    user_name -> char
+    password   -> char
+    date_start_plan: date
+    time_pay -> integer
+    card -> Id de Tarjeta
+    plan -> char
+
+

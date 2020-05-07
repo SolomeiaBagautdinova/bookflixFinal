@@ -10,6 +10,7 @@ class Profile(models.Model):
     pleasures_author = models.ManyToManyField(Author, blank=True, null=True)
     pleasures_editorial = models.ManyToManyField(Editorial,blank=True, null=True)
     
+    date_of_creation = models.DateTimeField(default=timezone.now)
     
     def publish(self):
         self.save()

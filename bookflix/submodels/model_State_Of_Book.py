@@ -1,7 +1,7 @@
 from django.db import models
 from django.utils import timezone
 
-from .model_Book import Book
+from .model_Publication import Publication
 from .model_Profile import Profile
 
 class StateOfBook(models.Model):
@@ -17,10 +17,12 @@ class StateOfBook(models.Model):
 
     date= models.DateField(default=timezone.now)
     state = models.CharField( max_length=2, choices=AC_CHOICES, default=finished)
-    book = models.ForeignKey(Book, on_delete=models.CASCADE)
+    book = models.ForeignKey(Publication, on_delete=models.CASCADE)
     profile = models.ForeignKey(Profile, on_delete=models.CASCADE)
 
-        
+    class Meta:
+        unique_together= ('book', 'profile') 
+         
     def publish(self):
         self.save()
 
