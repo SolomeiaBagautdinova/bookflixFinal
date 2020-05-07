@@ -11,3 +11,7 @@ admin.site.register(Book)
 admin.site.register(Profile)
 
 admin.site.register(Billboard)
+
+admin.site.register(UserSolicitud)
+
+admin.site.register(StateOfBook)

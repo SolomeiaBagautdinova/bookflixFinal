@@ -11,10 +11,12 @@ class Account(models.Model):
     free='1'
     normal='2'
     premium='4'
+    admin = '9'
     AC_CHOICES= (
         (free, 'free'),
         (normal, 'normal'),
-        (premium, 'premium')
+        (premium, 'premium'),
+        (admin, 'admin')
     )
     "Valores del modelo"
     email = models.EmailField(max_length=254, unique=True, )
