@@ -9,6 +9,7 @@ admin.site.register(Account)
 admin.site.register(CreditCards)
 admin.site.register(Profile)
 
+admin.site.register(MailToConfirm)
 admin.site.register(UserSolicitud)
 
 admin.site.register(StateOfBook)

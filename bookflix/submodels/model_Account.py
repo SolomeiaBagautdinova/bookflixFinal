@@ -26,6 +26,7 @@ class Account(models.Model):
     date_start_plan = models.DateField(blank=True, null=True, auto_now=False, auto_now_add=False)
     time_pay = models.IntegerField(default=0)
     card = models.OneToOneField(CreditCards, on_delete=models.CASCADE)
+    is_confirm= models.BooleanField(default = False)
     
     def publish(self):
         self.save()

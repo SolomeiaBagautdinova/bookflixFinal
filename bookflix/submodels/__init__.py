@@ -6,6 +6,9 @@ from .model_KindOfDescription import Editorial
 "tiene creditCards"
 from .model_CreditCards import CreditCards
 
+"tiene la generación de tablas para confirmar mail y cambio de mail"
+from .model_MailToConfirm import  MailToConfirm
+
 "tiene Account"
 from .model_Account import Account
 
@@ -15,6 +18,7 @@ from .model_Publication import Book
 from .model_Publication import BookByChapter
 from .model_Publication import Chapter
 from .model_Publication import Billboard
+
 
 "Tiene profile"
 from .model_Profile import Profile
